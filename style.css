@@ -7,29 +7,95 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.bold {
-  font-weight: bold;
-}
+
+/* Navbar CSS */
 nav {
-  margin-top: 3%;
+  margin-top: 2%;
 }
+
+#icon {
+  color: #46b65d;
+  font-size: 36px;
+}
+#brand {
+  letter-spacing: 5px;
+  vertical-align: top;
+}
+
 ul {
   list-style: none;
   display: inline;
+}
+ul a {
+  -webkit-transition: color 0.2s ease-out;
+ -moz-transition: color 0.2s ease-out;
+ -o-transition: color 0.2s ease-out;
+ -ms-transition: color 0.2s ease-out;
+ transition: color 0.2s ease-out;
 }
 
 li {
   display: inline;
   font-weight: bold;
 }
+
 li > a {
   color: white;
   text-decoration: none;
-  padding: 16px;
+  padding: 26px;
+  letter-spacing: 3px;
+  font-size: 18px;
 }
 
 li > a:hover {
   color: white;
   text-decoration: none;
+}
 
+.greenbutton {
+  border-style: solid;
+  border-color: #46b65d;
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 8px 0px 8px 0px;
+}
+.greenbutton > a {
+  color: #46b65d;
+  letter-spacing: 1px;
+  -webkit-transition: color 0s ease-out;
+ -moz-transition: color 0s ease-out;
+ -o-transition: color 0s ease-out;
+ -ms-transition: color 0s ease-out;
+ transition: color 0s ease-out;
+}
+.greenbutton:hover {
+  color: white;
+  background-color: #46b65d;
+}
+.hovereffects > ul > li > a:hover {
+  color: #46b65d;
+}
+.hovereffects > a:hover {
+  color: #46b65d;
+}
+.slackbutton {
+  letter-spacing: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: white;
+  background-color: white;
+  padding: 8px 0px 8px 0px;
+}
+.slackbutton > a, .slackbutton > a:hover {
+  color: black;
+  letter-spacing: 0px;
+}
+.slackicon {
+  height: 20px;
+  width: 20px;
+}
+#right-side {
+  float: right;
+  margin-right: 5%;
 }

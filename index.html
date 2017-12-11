@@ -4,6 +4,7 @@
   <title>Atomist Clone</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
@@ -14,14 +15,15 @@
 
   <nav>
     <div class="container-fluid">
-      <div class="row">
+      <div class="row wrapper">
         <div class="col-md-4">
           <ul>
-            <li><a href="#">ATOMIST</a></li>
+
+            <li><a href="#" id="brand"><i class="fa fa-rocket" id="icon"></i>ATOMIST</a></li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <ul class="bold">
+        <div class="col-md-4 hovereffects" style="text-align: center;">
+          <ul>
             <li><a href="#">PRODUCT</a></li>
             <li><a href="#">PRICING</a></li>
             <li><a href="#">DOCS</a></li>
@@ -29,10 +31,10 @@
           </ul>
         </div>
         <div class="col-md-4">
-          <ul>
-            <li><button style="btn btnblock">GET STARTED</button></li>
-            <li><button style="btn btnblock">Add to <strong>Slack</strong></button></li>
-            <li><a href="#">SIGN IN</a></li>
+          <ul id="right-side">
+            <li class="greenbutton"><a href="#">GET STARTED</a></li>
+            <li class="slackbutton"><a href="#"><img src="slack-icon.svg" class="slackicon" /> Add to Slack</a></li>
+            <li class="hovereffects"><a href="#" style="font-weight: lighter;">SIGN IN</a></li>
           </ul>
         </div>
       </div>
