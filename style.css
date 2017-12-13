@@ -1,25 +1,27 @@
 body {
-  background-color: black;
-  color: white;
-  background-image: url("stars.jpg");
-  background-repeat: no-repeat;
-  background-position: left top;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+#starsbackground {
+  background-color: black;
+  color: white;
+  background-image: url("stars.jpg");
+  background-repeat: round;
+  padding-top: 3%;
+}
 
 /* Navbar CSS */
-nav {
-  margin-top: 2%;
-}
 
 #icon {
   color: #46b65d;
   font-size: 36px;
 }
 #brand {
+  margin-top: -.5%;
+}
+#brand a {
   letter-spacing: 5px;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 ul {
@@ -34,6 +36,12 @@ ul a {
  transition: color 0.2s ease-out;
 }
 
+ul img {
+  height: 50px;
+  width: 50px;
+  display: inline;
+
+}
 li {
   display: inline;
   font-weight: bold;
@@ -67,6 +75,7 @@ li > a:hover {
  -o-transition: color 0s ease-out;
  -ms-transition: color 0s ease-out;
  transition: color 0s ease-out;
+ font-weight: normal;
 }
 .greenbutton:hover {
   color: white;
@@ -98,4 +107,47 @@ li > a:hover {
 #right-side {
   float: right;
   margin-right: 5%;
+}
+
+/* Header and logos */
+
+#header {
+  text-align: center;
+  padding-top: 5%;
+}
+
+#header h1 {
+  letter-spacing: 3px;
+  font-size: 60px;
+}
+
+#header a {
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: #46b65d;
+  color: white;
+  background-color: #46b65d;
+  padding: 1.5% 3% 1.5% 3%;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#logos {
+  padding-top: 10%;
+  padding-bottom: 1%;
+
+}
+
+#logos img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+#logos h2 {
+  text-align: center;
+  letter-spacing: 1px;
 }
