@@ -6,7 +6,8 @@ body {
   background-color: black;
   color: white;
   background-image: url("stars.jpg");
-  background-repeat: round;
+  background-repeat: repeat;
+  background-position: bottom;
   padding-top: 3%;
 }
 
