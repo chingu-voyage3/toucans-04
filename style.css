@@ -25,16 +25,16 @@ body {
   vertical-align: middle;
 }
 
-ul {
+#starsbackground ul {
   list-style: none;
   display: inline;
 }
 ul a {
   -webkit-transition: color 0.2s ease-out;
- -moz-transition: color 0.2s ease-out;
- -o-transition: color 0.2s ease-out;
- -ms-transition: color 0.2s ease-out;
- transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  -ms-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 ul img {
@@ -43,7 +43,7 @@ ul img {
   display: inline;
 
 }
-li {
+#starsbackground li {
   display: inline;
   font-weight: bold;
 }
@@ -56,10 +56,12 @@ li > a {
   font-size: 18px;
 }
 
-li > a:hover {
+li a:hover, a:visited, a:active {
   color: white;
   text-decoration: none;
 }
+
+
 
 .greenbutton {
   border-style: solid;
@@ -150,5 +152,49 @@ li > a:hover {
 
 #logos h2 {
   text-align: center;
+  letter-spacing: 1px;
+}
+/* Bulleted List Area */
+#bulletlists {
+display: block;
+background-color: #0a1028;
+}
+
+#bulletlists .row {
+  margin: 0% 20% 0% 20%;
+}
+#bulletlists p {
+  font-size: 20px;
+  text-align: center;
+  padding: 5% 2% 2% 2%;
+  color: white;
+}
+#bulletlists ul {
+  font-size: 16px;
+}
+#bulletlists ul li {
+  padding: 2% 1% 2% 1%;
+  color: #46b65d;
+}
+#bulletlists ul li span {
+  color: white;
+  opacity: .7;
+}
+#getstartedbutton {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  margin-left: 1%;
+}
+#getstartedbutton a {
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: #46b65d;
+  color: white;
+  background-color: #46b65d;
+  padding: 1% 1.5% 1% 1.5%;
+  font-size: 16px;
   letter-spacing: 1px;
 }
