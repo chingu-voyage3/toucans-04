@@ -154,13 +154,15 @@ li a:hover, a:visited, a:active {
   text-align: center;
   letter-spacing: 1px;
 }
+
 /* Bulleted List Area */
+
 #bulletlists {
 display: block;
 background-color: #0a1028;
 }
 
-#bulletlists .row {
+#bulletlists #bulletrow {
   margin: 0% 20% 0% 20%;
 }
 #bulletlists p {
@@ -183,7 +185,7 @@ background-color: #0a1028;
 #getstartedbutton {
   text-align: center;
   margin-top: 2%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   margin-left: 1%;
 }
 #getstartedbutton a {
@@ -197,4 +199,21 @@ background-color: #0a1028;
   padding: 1% 1.5% 1% 1.5%;
   font-size: 16px;
   letter-spacing: 1px;
+}
+
+/* Computer Area */
+#computer {
+  background: #0a1028;
+  height: 150px;
+}
+#computerbackground img {
+margin: 0 auto;
+border: 1px solid silver;
+border-radius: 15px;
+position: relative;
+top: -100px;
+}
+
+#computerbackground {
+  background: #181c40;
 }
