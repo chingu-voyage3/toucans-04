@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
   <!-- Navigation bar -->
 <div class="container-fluid" id="starsbackground">
   <nav>
@@ -21,7 +22,7 @@
             <li><a href="#"><img src="atom.svg" /> ATOMIST</a></li>
           </ul>
         </div>
-        <div class="col-md-4 hovereffects" style="text-align: center;">
+        <div class="col-md-4 hovereffects" style="text-align: center" id="topmiddle">
           <ul>
             <li><a href="#">PRODUCT</a></li>
             <li><a href="#">PRICING</a></li>
@@ -117,6 +118,107 @@
 <div class="container-fluid" id="computerbackground">
   <img src="tablet.jpg" class="img-responsive" />
 </div>
+
+<!--Scrolling Feed Area-->
+<div class="container-fluid" id="scrollingarea">
+<!--Erika's Code -->
+</div>
+
+<!--Tabbed Area -->
+<div class="container-fluid" id="tabbedarea">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h2>SIMPLE, POWERFUL, OPEN SOURCE AUTOMATION API</h2>
+      <p>Automate your development process, increase visibility.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 tab text-center">
+      <button class="tablinks" onclick="openTab(event, 'create')" id="defaultOpen">CREATE PROJECT</button>
+      <button class="tablinks" onclick="openTab(event, 'update')">UPDATE DEPENDECIES</button>
+      <button class="tablinks" onclick="openTab(event, 'command')">BOT COMMAND</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 tabcontent" id="create">
+      <img src="tab1.jpg" class="img-responsive" />
+    </div>
+    <div class="col-md-6 col-md-offset-3 tabcontent" id="update">
+      <img src="tab2.jpg" class="img-responsive" />
+    </div>
+    <div class="col-md-6 col-md-offset-3 tabcontent" id="command">
+      <img src="tab3.jpg" class="img-responsive" />
+    </div>
+  </div>
+</div>
+
+<!--Bottom Navbar-->
+<div class="container-fluid" id="botnav">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <ul>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">TERMS</a></li>
+        <li><a href="#">PRIVACY</a></li>
+        <li><a href="#">THE COMPOSITION</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--Subscribe Area-->
+<div class="container-fluid" id="subscribearea">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 text-center">
+      <p>STAY IN THE KNOW. SIGN UP NOW!</p>
+      <form action="#">
+        <input type="email" name="email" required placeholder="email address">
+        <button formaction="#">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--Footer-->
+<div class="container-fluid" id="footer">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 text-center">
+      <h5>CREATED WITH <i class="fa fa-heart" id="heart"></i> BY TOUCANS-04 IN CHINGU & BEYOND</h5>
+      <h5 style="opacity: .6;">COPYRIGHT <i class="fa fa-copyright"></i> 2017 ATOMIST</h5>
+    </div>
+    <div class="col-md-4 col-md-offset-4 text-center">
+      <a href="http://www.twitter.com/atomist"><i class="fa fa-twitter" id="twitter"></i></a>
+    </div>
+    <div class="col-md-4 col-md-offset-4 text-center">
+      <a href="http://www.twitter.com/atomist">FOLLOW ATOMIST ON TWITTER</a>
+    </div>
+  </div>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+
+/*Hides all elements with class="tabcontent" */
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+/*Get all elements with class="tablinks" and remove the class "active"*/
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i=0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+/*Show the current tab, and add an "active" class to the button that opened the tab*/
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+/*Set first tab to active on pageload*/
+document.getElementById("defaultOpen").click();
+</script>
 
 </body>
 </html>
