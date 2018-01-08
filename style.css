@@ -1,0 +1,380 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#starsbackground {
+  background-color: black;
+  color: white;
+  background-image: url("stars.jpg");
+  background-repeat: repeat;
+  background-position: bottom;
+  padding-top: 3%;
+}
+
+/* Navbar CSS */
+
+#icon {
+  color: #46b65d;
+  font-size: 36px;
+}
+#brand {
+  margin-top: -.5%;
+}
+#brand a {
+  letter-spacing: 5px;
+  vertical-align: middle;
+}
+
+#starsbackground ul {
+  list-style: none;
+  display: inline;
+}
+
+#starsbackground li {
+  display: inline;
+  font-weight: bold;
+}
+ul a {
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  -ms-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+ul img {
+  height: 50px;
+  width: 50px;
+  display: inline;
+
+}
+
+.hovereffects a {
+  color: white;
+  text-decoration: none;
+  padding: 26px;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+
+li a:hover, a:visited, a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.greenbutton {
+  border-style: solid;
+  border-color: #46b65d;
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 8px 16px 8px 16px;
+  font-size: 16px;
+}
+
+.greenbutton > a {
+  color: #46b65d;
+  letter-spacing: 1px;
+  -webkit-transition: color 0s ease-out;
+ -moz-transition: color 0s ease-out;
+ -o-transition: color 0s ease-out;
+ -ms-transition: color 0s ease-out;
+ transition: color 0s ease-out;
+ font-weight: normal;
+}
+
+.greenbutton:hover {
+  color: white;
+  background-color: #46b65d;
+}
+
+.hovereffects > ul > li > a:hover {
+  color: #46b65d;
+}
+
+.hovereffects > a:hover {
+  color: #46b65d;
+}
+
+.slackbutton {
+  letter-spacing: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: white;
+  background-color: white;
+  padding: 8px 8px 8px 8px;
+  font-size: 16px;
+  margin-left: 1%;
+}
+
+.slackbutton > a, .slackbutton > a:hover {
+  color: black;
+  letter-spacing: 0px;
+}
+
+.slackicon {
+  height: 20px;
+  width: 20px;
+}
+
+#right-side {
+
+  margin-left: 25%;
+}
+
+/* Header and logos */
+
+#header {
+  text-align: center;
+  padding-top: 5%;
+}
+
+#header h1 {
+  letter-spacing: 3px;
+  font-size: 60px;
+}
+
+#header a {
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: #46b65d;
+  color: white;
+  background-color: #46b65d;
+  padding: 1.5% 3% 1.5% 3%;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#logos {
+  padding-top: 10%;
+  padding-bottom: 1%;
+
+}
+
+#logos img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+#logos h2 {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Bulleted List Area */
+
+#bulletlists {
+display: block;
+background-color: #0a1028;
+}
+
+#bulletlists #bulletrow {
+  margin: 0% 20% 0% 20%;
+}
+#bulletlists p {
+  font-size: 20px;
+  text-align: center;
+  padding: 5% 2% 2% 2%;
+  color: white;
+}
+#bulletlists ul {
+  font-size: 16px;
+}
+#bulletlists ul li {
+  padding: 2% 1% 2% 1%;
+  color: #46b65d;
+}
+#bulletlists ul li span {
+  color: white;
+  opacity: .7;
+}
+#getstartedbutton {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 1%;
+}
+#getstartedbutton a {
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: #46b65d;
+  color: white;
+  background-color: #46b65d;
+  padding: 1% 1.5% 1% 1.5%;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* Computer Area */
+#computer {
+  background: #0a1028;
+  height: 150px;
+}
+#computerbackground img {
+margin: 0 auto;
+border: 1px solid silver;
+border-radius: 15px;
+position: relative;
+top: -100px;
+}
+
+#computerbackground {
+  background: #181c40;
+}
+
+/* Scrolling Area Erika's Code */
+
+#scrollingarea {
+  background-color: #0a1028;
+  padding-top: 15%;
+}
+
+/* Tabbed Area */
+#tabbedarea {
+  background: #181c40;
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+
+#tabbedarea h2 {
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#tabbedarea p {
+  color: white;
+  opacity: .7;
+  text-align: center;
+  font-size: 18px;
+}
+
+.tab {
+  overflow: hidden;
+  background-color: #181c40;
+  padding-top: 2%;
+}
+
+.tab button {
+  background-color: inherit;
+  color: white;
+  opacity: .6;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 18px;
+}
+
+.tab button:hover {
+  color: white;
+  opacity: 1;
+}
+
+.tab button.active {
+  background-color: #111822;
+  color: white;
+  opacity: 1;
+}
+
+.tabcontent {
+  display: none;
+  padding: 3% 1%;
+  background-color: #111822;
+}
+
+/* Bottom Navbar */
+#botnav {
+  background: #227870;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+}
+
+#botnav li {
+  list-style: none;
+  display: inline-block;
+  padding: 28px 24px 24px 24px;
+
+}
+
+/* Subscribe Area */
+#subscribearea {
+  background: #181c40;
+  padding-bottom: 5%;
+}
+#subscribearea p {
+  color: white;
+  font-size: 28px;
+  padding: 6% 0% 2% 0%;
+}
+
+#subscribearea input {
+  width: 300px;
+  height: 60px;
+  background: #181c40;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+#subscribearea input:active {
+  border: 1px solid #186194;
+}
+
+#subscribearea button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgba(34, 120, 112, 1);
+  color: white;
+  letter-spacing: 1px;
+  font-size: 16px;
+  padding: 18px 20px 20px 20px;
+  margin-left: 3px;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+#subscribearea button:hover {
+  background: rgba(34, 120, 112, .7);
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+}
+/* Footer Area */
+#footer {
+  background: #0a1028;
+  color: white;
+  letter-spacing: 2px;
+  padding-top: 1%;
+  padding-bottom: 5%;
+}
+
+#footer h5 {
+  padding: 2%;
+}
+#heart {
+  color: red;
+}
+
+#footer a {
+text-decoration: none;
+color: white;
+}
+
+#twitter {
+  color: #00aced;
+  font-size: 26px;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}

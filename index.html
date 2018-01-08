@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Atomist Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+<div class="container-fluid" id="starsbackground">
+  <nav>
+    <div class="container-fluid">
+      <div class="row wrapper">
+        <div class="col-md-4" id="brand">
+          <ul>
+            <li><a href="#"><img src="atom.svg" /> ATOMIST</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 hovereffects" style="text-align: center" id="topmiddle">
+          <ul>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">DOCS</a></li>
+            <li><a href="#">BLOG</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul id="right-side">
+            <li class="greenbutton"><a href="#">GET STARTED</a></li>
+            <li class="slackbutton"><a href="#"><img src="slack-icon.svg" class="slackicon" /> Add to Slack</a></li>
+            <li class="hovereffects"><a href="#" style="font-weight: lighter;">SIGN IN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="container fluid" id="header">
+    <h1>DEVELOPMENT AUTOMATION</h1>
+    <h3>Create, Ship, and continuously Improve your software</h3>
+    <div style="padding-top: 5%;">
+      <a href="#">GET STARTED</a>
+    </div>
+  </div>
+
+  <!--Logos-->
+  <div class="container fluid" id="logos">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="sketch.svg" />
+        <h2>CREATE</H2>
+      </div>
+      <div class="col-md-4">
+        <img src="spacecraft2.svg" />
+        <h2>SHIP</h2>
+      </div>
+      <div class="col-md-4">
+        <img src="spacecraft3.svg" />
+        <h2>IMPROVE</h2>
+      </div>
+    </div>
+  </div>
+</div> <!-- end of starsbackground -->
+
+<!-- Bulleted Lists -->
+<div class="container-fluid" id="bulletlists">
+  <div class="row" id="bulletrow">
+    <div class="col-md-4">
+      <p>Starting a new project should be a joy, not a drag. Make project creation one
+        of your super powers.</p>
+        <ul>
+          <li><span>Create everything you need for your project in one go</span></li>
+          <li><span>Turn any repo into a software factory</span></li>
+          <li><span>Configure your development flow</span></li>
+          <li><span>Get actionable notifications for your projects in chat</span></li>
+          <li><span>See project information on the Atomist web dashboard</span></li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+      <p>Take the friction out of your shipping. Automate tedious tasks, get the right
+         notifications to the right people.</p>
+         <ul>
+           <li><span>Automate custom project checks and reviews</span></li>
+           <li><span>Streamline code review. Never wait for merges on all green again</span></li>
+           <li><span>Compose and evolve flexible development flows based on events, not static
+             pipeline definitions</span></li>
+           <li><span>Release with the convenience of a button in Slack</span></li>
+         </ul>
+    </div>
+    <div class="col-md-4">
+      <p>Nothing says tedium like updates. Let us help. Less key mashing, and back
+        to coding faster. Update 100 projects as easily as one.</p>
+        <ul>
+          <li><span>Roll out new version of frameworks across all projects</span></li>
+          <li><span>Update dependencies across all projects</span></li>
+          <li><span>Automate code-level change across your projects, whether it's a big renaming,
+            or squashing a bug across your code base</span></li>
+        </ul>
+    </div>
+  </div>
+  <div id="getstartedbutton">
+    <a href="#">GET STARTED</a>
+  </div>
+</div>
+
+<!--Safe space for Relative Computer image -->
+<div class="container-fluid" id="computer">
+
+</div>
+<!--Computer Area -->
+<div class="container-fluid" id="computerbackground">
+  <img src="tablet.jpg" class="img-responsive" />
+</div>
+
+<!--Scrolling Feed Area-->
+<div class="container-fluid" id="scrollingarea">
+<!--Erika's Code -->
+</div>
+
+<!--Tabbed Area -->
+<div class="container-fluid" id="tabbedarea">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h2>SIMPLE, POWERFUL, OPEN SOURCE AUTOMATION API</h2>
+      <p>Automate your development process, increase visibility.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 tab text-center">
+      <button class="tablinks" onclick="openTab(event, 'create')" id="defaultOpen">CREATE PROJECT</button>
+      <button class="tablinks" onclick="openTab(event, 'update')">UPDATE DEPENDECIES</button>
+      <button class="tablinks" onclick="openTab(event, 'command')">BOT COMMAND</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 tabcontent" id="create">
+      <img src="tab1.jpg" class="img-responsive" />
+    </div>
+    <div class="col-md-6 col-md-offset-3 tabcontent" id="update">
+      <img src="tab2.jpg" class="img-responsive" />
+    </div>
+    <div class="col-md-6 col-md-offset-3 tabcontent" id="command">
+      <img src="tab3.jpg" class="img-responsive" />
+    </div>
+  </div>
+</div>
+
+<!--Bottom Navbar-->
+<div class="container-fluid" id="botnav">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <ul>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">TERMS</a></li>
+        <li><a href="#">PRIVACY</a></li>
+        <li><a href="#">THE COMPOSITION</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--Subscribe Area-->
+<div class="container-fluid" id="subscribearea">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 text-center">
+      <p>STAY IN THE KNOW. SIGN UP NOW!</p>
+      <form action="#">
+        <input type="email" name="email" required placeholder="email address">
+        <button formaction="#">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--Footer-->
+<div class="container-fluid" id="footer">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 text-center">
+      <h5>CREATED WITH <i class="fa fa-heart" id="heart"></i> BY TOUCANS-04 IN CHINGU & BEYOND</h5>
+      <h5 style="opacity: .6;">COPYRIGHT <i class="fa fa-copyright"></i> 2017 ATOMIST</h5>
+    </div>
+    <div class="col-md-4 col-md-offset-4 text-center">
+      <a href="http://www.twitter.com/atomist"><i class="fa fa-twitter" id="twitter"></i></a>
+    </div>
+    <div class="col-md-4 col-md-offset-4 text-center">
+      <a href="http://www.twitter.com/atomist">FOLLOW ATOMIST ON TWITTER</a>
+    </div>
+  </div>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+
+/*Hides all elements with class="tabcontent" */
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+/*Get all elements with class="tablinks" and remove the class "active"*/
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i=0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+/*Show the current tab, and add an "active" class to the button that opened the tab*/
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+/*Set first tab to active on pageload*/
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
