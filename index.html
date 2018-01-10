@@ -30,8 +30,8 @@
             <li><a href="#">BLOG</a></li>
           </ul>
         </div>
-        <div class="col-sm-4 col-xs-12">
-          <ul id="right-side">
+        <div class="col-sm-4 col-xs-12" id="right-side">
+          <ul>
             <li class="greenbutton"><a href="#">GET STARTED</a></li>
             <li class="slackbutton"><a href="#"><img src="slack-icon.svg" class="slackicon" /> Add to Slack</a></li>
             <li class="hovereffects"><a href="#" style="font-weight: lighter;">SIGN IN</a></li>
@@ -73,24 +73,42 @@
 
 <!-- Bulleted Lists -->
 <div class="container-fluid" id="bulletlists">
-  <div class="row" id="bulletrow">
+  <div class="row" id="bulletrow2">
     <div class="col-sm-4">
       <div class="logos2">
           <img src="sketch.svg" class="img-responsive" />
           <h2>CREATE</H2>
       </div>
+      
       <p>Starting a new project should be a joy, not a drag. Make project creation one
         of your super powers.</p>
-        
+      
+        <div class="bulletlists2">
+        <ul>
+          <li><span>Create everything you need for your project in one go</span></li>
+          <li><span>Turn any repo into a software factory</span></li>
+          <li><span>Configure your development flow</span></li>
+          <li><span>Get actionable notifications for your projects in chat</span></li>
+          <li><span>See project information on the Atomist web dashboard</span></li>
+        </ul>
+        </div>
     </div>
     <div class="col-sm-4">
         <div class="logos2">
             <img src="spacecraft2.svg" class="img-responsive" />
             <h2>SHIP</H2>
         </div>
-      <p>Take the friction out of your shipping. Automate tedious tasks, get the right
-         notifications to the right people.</p>
-         
+        <p>Take the friction out of your shipping. Automate tedious tasks, get the right
+          notifications to the right people.</p>
+        <div class="bulletlists2">
+         <ul>
+          <li><span>Automate custom project checks and reviews</span></li>
+          <li><span>Streamline code review. Never wait for merges on all green again</span></li>
+          <li><span>Compose and evolve flexible development flows based on events, not static
+            pipeline definitions</span></li>
+          <li><span>Release with the convenience of a button in Slack</span></li>
+        </ul>
+        </div> 
     </div>
     <div class="col-sm-4">
         <div class="logos2">
@@ -99,7 +117,14 @@
         </div>
       <p>Nothing says tedium like updates. Let us help. Less key mashing, and back
         to coding faster. Update 100 projects as easily as one.</p>
-        
+        <div class="bulletlists2">
+        <ul>
+          <li><span>Roll out new version of frameworks across all projects</span></li>
+          <li><span>Update dependencies across all projects</span></li>
+          <li><span>Automate code-level change across your projects, whether it's a big renaming,
+            or squashing a bug across your code base</span></li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="row" id="bulletrow">
@@ -150,7 +175,7 @@
     <div class="col-sm-1 col-sm-offset-1 col-md-1 col-md-offset-2 col-xs-1">
       <button class="arrows prev" id="prev"><i class="left"></i></button>
     </div>
-    <div class="col-sm-8 col-xs-12"> 
+    <div class="col-sm-8 col-md-6 col-xs-12"> 
       <div class="scrollcontent" id="scroll1">
         <h3>Ensuring consistent provisioning and management of applications and infrastructure
           for a growing platform can be challenging. Atomist allows us to focus on what matters, 
@@ -196,7 +221,7 @@
           </h4>
       </div>
     </div>
-    <div class="col-sm-1 col-xs-1">
+    <div class="col-sm-1 col-md-1 col-xs-1">
       <button class="arrows next" id="next"><i class="right"></i></button>
     </div>
   </div>
@@ -226,20 +251,20 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 tab text-center">
+    <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 tab text-center">
       <button class="tablinks" onclick="openTab(event, 'create')" id="defaultOpen">CREATE PROJECT</button>
       <button class="tablinks" onclick="openTab(event, 'update')">UPDATE DEPENDENCIES</button>
       <button class="tablinks" onclick="openTab(event, 'command')">BOT COMMAND</button>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6 col-md-offset-3 tabcontent" id="create">
+    <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 tabcontent" id="create">
       <img src="tab1.jpg" class="img-responsive" />
     </div>
-    <div class="col-md-6 col-md-offset-3 tabcontent" id="update">
+    <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 tabcontent" id="update">
       <img src="tab2.jpg" class="img-responsive" />
     </div>
-    <div class="col-md-6 col-md-offset-3 tabcontent" id="command">
+    <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 tabcontent" id="command">
       <img src="tab3.jpg" class="img-responsive" />
     </div>
   </div>

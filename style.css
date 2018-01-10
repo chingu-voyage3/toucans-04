@@ -35,6 +35,12 @@ body {
   display: inline;
   font-weight: bold;
 }
+#topmiddle, #right-side {
+  margin-top: .5%
+}
+#topmiddle a {
+  font-size: 1em;
+}
 ul a {
   -webkit-transition: color 0.2s ease-out;
   -moz-transition: color 0.2s ease-out;
@@ -69,7 +75,7 @@ li a:hover, a:visited, a:active {
   border-width: 2px;
   border-radius: 5px;
   padding: 8px 16px 8px 16px;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .greenbutton > a {
@@ -104,7 +110,7 @@ li a:hover, a:visited, a:active {
   border-color: white;
   background-color: white;
   padding: 8px 8px 8px 8px;
-  font-size: 16px;
+  font-size: 1em;
   margin-left: 1%;
 }
 
@@ -118,9 +124,11 @@ li a:hover, a:visited, a:active {
   width: 20px;
 }
 
-#right-side {
-
-  margin-left: 25%;
+#right-side  {
+  
+}
+#right-side a {
+  font-size: 1em;
 }
 
 /* Header and logos */
@@ -182,7 +190,7 @@ li a:hover, a:visited, a:active {
 display: block;
 background-color: #0a1028;
 }
-#bulletlists #bulletrow {
+#bulletlists #bulletrow, #bulletlists #bulletrow2 {
   margin: 0% 20% 0% 20%;
 }
 #bulletlists p {
@@ -201,6 +209,9 @@ background-color: #0a1028;
 #bulletlists ul li span {
   color: white;
   opacity: .7;
+}
+.bulletlists2 {
+  display: none;
 }
 #getstartedbutton {
   text-align: center;
@@ -561,7 +572,7 @@ color: white;
   }
   #starsbackground li {
     display: block;
-    padding: 5%;
+    padding: 3%;
   }
   #brand {
     margin-top: 5%;
@@ -576,10 +587,12 @@ color: white;
   
   #topmiddle {
     padding: 5%;
+    font-size: 1em;
   }
   #right-side {
     margin-left: 0%;
     text-align: center;
+    font-size: 1em;
   }
   #right-side li {
     display: block;
@@ -616,8 +629,18 @@ color: white;
     color: white;
     text-align: center;
   }
+  #bulletrow {
+    display: none;
+  }
+  
+  #bulletlists #bulletrow, #bulletlists #bulletrow2 {
+    margin: 0% 0% 0% 0%;
+  }
+  .bulletlists2 {
+    display: block;
+  }
   .logos2 img {
-    padding: 0% 20% 0% 20%;
+    padding: 0% 30% 0% 30%;
   }
   #bulletlists #bulletrow {
     margin: 0%;
@@ -660,6 +683,13 @@ color: white;
   #tabbedarea {
     padding-top: 10%;
     padding-bottom: 10%;
+  }
+  .tab {
+    padding-top: 5%;
+  }
+  .tab button {
+    padding: 10px 16px;
+    font-size: 1em;
   }
   #botnav ul {
     padding: 0;
