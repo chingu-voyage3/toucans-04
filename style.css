@@ -537,8 +537,8 @@ color: white;
 .logos2 img {
   padding: 0% 30% 0% 30%;
 }
-#bulletlists #bulletrow {
-  margin: 0%;
+#bulletlists #bulletrow, #bulletlists #bulletrow2 {
+  margin: 0% 0% 0% 0%;
 }
 #bulletrow p {
   padding-top: 0%;
