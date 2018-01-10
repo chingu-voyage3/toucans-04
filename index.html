@@ -8,21 +8,21 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
 
   <!-- Navigation bar -->
 <div class="container-fluid" id="starsbackground">
-  <nav>
-    <div class="container-fluid">
-      <div class="row wrapper">
-        <div class="col-md-4" id="brand">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12" id="brand">
           <ul>
             <li><a href="#"><img src="atom.svg" /> ATOMIST</a></li>
           </ul>
         </div>
-        <div class="col-md-4 hovereffects" style="text-align: center" id="topmiddle">
+        <div class="col-sm-4 col-xs-12 hovereffects text-center" id="topmiddle">
           <ul>
             <li><a href="#">PRODUCT</a></li>
             <li><a href="#">PRICING</a></li>
@@ -30,7 +30,7 @@
             <li><a href="#">BLOG</a></li>
           </ul>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-4 col-xs-12">
           <ul id="right-side">
             <li class="greenbutton"><a href="#">GET STARTED</a></li>
             <li class="slackbutton"><a href="#"><img src="slack-icon.svg" class="slackicon" /> Add to Slack</a></li>
@@ -38,31 +38,33 @@
           </ul>
         </div>
       </div>
-    </div>
-  </nav>
 
   <!-- Header -->
-  <div class="container fluid" id="header">
-    <h1>DEVELOPMENT AUTOMATION</h1>
-    <h3>Create, Ship, and continuously Improve your software</h3>
-    <div style="padding-top: 5%;">
-      <a href="#">GET STARTED</a>
+  <div class="container-fluid" id="header">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+        <h1>DEVELOPMENT AUTOMATION</h1>
+        <h3>Create, Ship, and continuously Improve your software</h3>
+        <div class="toppad">
+         <a href="#">GET STARTED</a>
+        </div>
+      </div>
     </div>
   </div>
 
   <!--Logos-->
-  <div class="container fluid" id="logos">
+  <div class="container-fluid" id="logos">
     <div class="row">
-      <div class="col-md-4">
-        <img src="sketch.svg" />
+      <div class="col-sm-1 col-sm-offset-3">
+        <img src="sketch.svg" class="img-responsive" />
         <h2>CREATE</H2>
       </div>
-      <div class="col-md-4">
-        <img src="spacecraft2.svg" />
+      <div class="col-sm-4">
+        <img src="spacecraft2.svg" class="img-responsive" />
         <h2>SHIP</h2>
       </div>
-      <div class="col-md-4">
-        <img src="spacecraft3.svg" />
+      <div class="col-sm-1">
+        <img src="spacecraft3.svg" class="img-responsive" />
         <h2>IMPROVE</h2>
       </div>
     </div>
@@ -72,40 +74,63 @@
 <!-- Bulleted Lists -->
 <div class="container-fluid" id="bulletlists">
   <div class="row" id="bulletrow">
-    <div class="col-md-4">
+    <div class="col-sm-4">
+      <div class="logos2">
+          <img src="sketch.svg" class="img-responsive" />
+          <h2>CREATE</H2>
+      </div>
       <p>Starting a new project should be a joy, not a drag. Make project creation one
         of your super powers.</p>
-        <ul>
-          <li><span>Create everything you need for your project in one go</span></li>
-          <li><span>Turn any repo into a software factory</span></li>
-          <li><span>Configure your development flow</span></li>
-          <li><span>Get actionable notifications for your projects in chat</span></li>
-          <li><span>See project information on the Atomist web dashboard</span></li>
-        </ul>
+        
     </div>
-    <div class="col-md-4">
+    <div class="col-sm-4">
+        <div class="logos2">
+            <img src="spacecraft2.svg" class="img-responsive" />
+            <h2>SHIP</H2>
+        </div>
       <p>Take the friction out of your shipping. Automate tedious tasks, get the right
          notifications to the right people.</p>
-         <ul>
-           <li><span>Automate custom project checks and reviews</span></li>
-           <li><span>Streamline code review. Never wait for merges on all green again</span></li>
-           <li><span>Compose and evolve flexible development flows based on events, not static
-             pipeline definitions</span></li>
-           <li><span>Release with the convenience of a button in Slack</span></li>
-         </ul>
+         
     </div>
-    <div class="col-md-4">
+    <div class="col-sm-4">
+        <div class="logos2">
+            <img src="spacecraft3.svg" class="img-responsive" />
+            <h2>IMPROVE</H2>
+        </div>
       <p>Nothing says tedium like updates. Let us help. Less key mashing, and back
         to coding faster. Update 100 projects as easily as one.</p>
-        <ul>
-          <li><span>Roll out new version of frameworks across all projects</span></li>
-          <li><span>Update dependencies across all projects</span></li>
-          <li><span>Automate code-level change across your projects, whether it's a big renaming,
-            or squashing a bug across your code base</span></li>
-        </ul>
+        
     </div>
   </div>
-  <div id="getstartedbutton">
+  <div class="row" id="bulletrow">
+    <div class="col-sm-4">
+        <ul>
+            <li><span>Create everything you need for your project in one go</span></li>
+            <li><span>Turn any repo into a software factory</span></li>
+            <li><span>Configure your development flow</span></li>
+            <li><span>Get actionable notifications for your projects in chat</span></li>
+            <li><span>See project information on the Atomist web dashboard</span></li>
+          </ul>
+    </div>
+    <div class="col-sm-4">
+        <ul>
+            <li><span>Automate custom project checks and reviews</span></li>
+            <li><span>Streamline code review. Never wait for merges on all green again</span></li>
+            <li><span>Compose and evolve flexible development flows based on events, not static
+              pipeline definitions</span></li>
+            <li><span>Release with the convenience of a button in Slack</span></li>
+          </ul>
+    </div>
+    <div class="col-sm-4">
+        <ul>
+            <li><span>Roll out new version of frameworks across all projects</span></li>
+            <li><span>Update dependencies across all projects</span></li>
+            <li><span>Automate code-level change across your projects, whether it's a big renaming,
+              or squashing a bug across your code base</span></li>
+          </ul>
+    </div>
+  </div>
+  <div class="col-xs-12" id="getstartedbutton">
     <a href="#">GET STARTED</a>
   </div>
 </div>
@@ -120,22 +145,90 @@
 </div>
 
 <!--Scrolling Feed Area-->
-<div class="container-fluid" id="scrollingarea">
-<!--Erika's Code -->
+<div class="container-fluid text-center" id="scrollingarea">
+  <div class="row">
+    <div class="col-sm-1 col-sm-offset-1 col-md-1 col-md-offset-2 col-xs-1">
+      <button class="arrows prev" id="prev"><i class="left"></i></button>
+    </div>
+    <div class="col-sm-8 col-xs-12"> 
+      <div class="scrollcontent" id="scroll1">
+        <h3>Ensuring consistent provisioning and management of applications and infrastructure
+          for a growing platform can be challenging. Atomist allows us to focus on what matters, 
+          writing valuable time saving automations that allow developers end to end visibility and control.
+          
+        </h3>
+        <h4>
+          - DONOVAN MULLER, LEAD TECHNICAL PARTNER, BARCLAYS AFRICA
+        </h4>
+      </div>
+      <div class="scrollcontent" id="scroll2">
+        <h3>Atomist has improved our globe-spanning team's daily workflow. It gives us a single interface
+          to both monitor the change introduced by development as well a way to manage contributions 
+          from our community.
+        </h3>
+        <h4>
+          - BEN HALE, PIVOTAL, CLOUD FOUNDRY
+        </h4>
+      </div>
+      <div class="scrollcontent" id="scroll3">
+          <h3>Atomist has become a critical part (and member!) of our dev team. Allowing us to efficiently
+            manage and monitor our development process.
+          </h3>
+          <h4>
+            - BRIAN CONNEEN, CHIEF TECHNOLOGY OFFICER, MARLETTE FUNDING
+          </h4>
+      </div>
+      <div class="scrollcontent" id="scroll4">
+          <h3>Atomist allows us to focus on improving our products instead of custom developer tools by
+            making automation easy with actionable information available to all team members.
+          </h3>
+          <h4>
+            - TAPANI MOILANEN, CHIEF ARCHITECT, KYYTI
+          </h4>
+      </div>
+      <div class="scrollcontent" id="scroll5">
+          <h3>We are excited to use Atomist in our team. The bridge it forms between multiple tools is an
+            incredible asset that will allow us to speed up development and have happier developers in the 
+            meantime.
+          </h3>
+          <h4>
+            - EMMA WILSON, NVIDIA
+          </h4>
+      </div>
+    </div>
+    <div class="col-sm-1 col-xs-1">
+      <button class="arrows next" id="next"><i class="right"></i></button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-1">
+        <button class="arrows2 prev" id="prev"><i class="left"></i></button>
+    </div>
+    <div class="col-sm-4 col-sm-offset-3 col-xs-9">
+      <button class="dotlinks" onclick="openLink(event, 'scroll1')" id="defaultActive">•</button>
+      <button class="dotlinks" onclick="openLink(event, 'scroll2')">•</button>
+      <button class="dotlinks" onclick="openLink(event, 'scroll3')">•</button>
+      <button class="dotlinks" onclick="openLink(event, 'scroll4')">•</button>
+      <button class="dotlinks" onclick="openLink(event, 'scroll5')">•</button>
+    </div>
+    <div class="col-xs-1">
+        <button class="arrows2 next" id="next"><i class="right"></i></button>
+    </div>
+  </div>
 </div>
 
 <!--Tabbed Area -->
 <div class="container-fluid" id="tabbedarea">
   <div class="row">
-    <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-6 col-md-offset-3 col-sm-12">
       <h2>SIMPLE, POWERFUL, OPEN SOURCE AUTOMATION API</h2>
       <p>Automate your development process, increase visibility.</p>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6 col-md-offset-3 tab text-center">
+    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 tab text-center">
       <button class="tablinks" onclick="openTab(event, 'create')" id="defaultOpen">CREATE PROJECT</button>
-      <button class="tablinks" onclick="openTab(event, 'update')">UPDATE DEPENDECIES</button>
+      <button class="tablinks" onclick="openTab(event, 'update')">UPDATE DEPENDENCIES</button>
       <button class="tablinks" onclick="openTab(event, 'command')">BOT COMMAND</button>
     </div>
   </div>
@@ -155,7 +248,7 @@
 <!--Bottom Navbar-->
 <div class="container-fluid" id="botnav">
   <div class="row">
-    <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-6 col-md-offset-3 col-xs-12">
       <ul>
         <li><a href="#">ABOUT US</a></li>
         <li><a href="#">TERMS</a></li>
@@ -170,7 +263,7 @@
 <!--Subscribe Area-->
 <div class="container-fluid" id="subscribearea">
   <div class="row">
-    <div class="col-md-4 col-md-offset-4 text-center">
+    <div class="col-md-4 col-md-offset-4 col-xs-12 text-center">
       <p>STAY IN THE KNOW. SIGN UP NOW!</p>
       <form action="#">
         <input type="email" name="email" required placeholder="email address">
@@ -185,7 +278,7 @@
   <div class="row">
     <div class="col-md-4 col-md-offset-4 text-center">
       <h5>CREATED WITH <i class="fa fa-heart" id="heart"></i> BY TOUCANS-04 IN CHINGU & BEYOND</h5>
-      <h5 style="opacity: .6;">COPYRIGHT <i class="fa fa-copyright"></i> 2017 ATOMIST</h5>
+      <h5 class="opacity6">COPYRIGHT <i class="fa fa-copyright"></i> 2017 ATOMIST</h5>
     </div>
     <div class="col-md-4 col-md-offset-4 text-center">
       <a href="http://www.twitter.com/atomist"><i class="fa fa-twitter" id="twitter"></i></a>
@@ -195,6 +288,8 @@
     </div>
   </div>
 </div>
+
+<!--Tabbed area script -->
 
 <script>
 function openTab(evt, tabName) {
@@ -209,15 +304,85 @@ function openTab(evt, tabName) {
 /*Get all elements with class="tablinks" and remove the class "active"*/
   tablinks = document.getElementsByClassName("tablinks");
   for (i=0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].className = tablinks[i].className.replace(" active1", "");
   }
 
 /*Show the current tab, and add an "active" class to the button that opened the tab*/
   document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
+  evt.currentTarget.className += " active1";
 }
 /*Set first tab to active on pageload*/
 document.getElementById("defaultOpen").click();
+</script>
+
+<!-- Dot Link Area Script -->
+<script>
+    function openLink(evt, linkName) {
+      var i, scrollcontent, dotlinks;
+    
+    /*Hides all elements with class="scrollcontent" */
+      scrollcontent = document.getElementsByClassName("scrollcontent");
+      for (i = 0; i < scrollcontent.length; i++) {
+        scrollcontent[i].style.display = "none";
+      }
+    
+    /*Get all elements with class="dotlinks" and remove the class "active"*/
+      dotlinks = document.getElementsByClassName("dotlinks");
+      for (i=0; i < dotlinks.length; i++) {
+        dotlinks[i].className = dotlinks[i].className.replace(" active", "");
+      }
+    
+    /*Show the current tab, and add an "active" class to the button that opened the tab*/
+      document.getElementById(linkName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    /*Set first tab to active on pageload*/
+    document.getElementById("defaultActive").click();
+  </script>
+
+<!-- Next/Previous buttons -->
+<script>
+ $('.prev').on('click', function() {
+    var i = $(".active").index();
+        i--;
+    $(".active").removeClass('active');
+    $('.dotlinks').eq(i).addClass('active');
+    $('.scrollcontent').css({ display: "none" });
+    $('.scrollcontent').eq(i).css({ display: "block" });
+});
+
+$('.next').on('click', function() {
+    var i = $(".active").index();
+        i = i >= $('.dotlinks').length-1 ? 0 : i+1;
+    $(".active").removeClass('active');
+    $('.dotlinks').eq(i).addClass('active');
+    $('.scrollcontent').css({ display: "none" });
+    $('.scrollcontent').eq(i).css({ display: "block" });
+});
+</script>
+
+<!-- Automatic slideshow -->
+<script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("scrollcontent");
+      var dots = document.getElementsByClassName("dotlinks");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1} 
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+  
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
 </script>
 
 </body>
