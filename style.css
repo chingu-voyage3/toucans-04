@@ -2,7 +2,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-#starsbackground {
+.starsbackground {
   color: white;
   background-image: url("stars.jpg");
   background-repeat: repeat;
@@ -12,33 +12,29 @@ body {
 
 /* Navbar CSS */
 
-#icon {
-  color: #46b65d;
-  font-size: 36px;
-}
-#brand {
+.brand {
   margin-top: -.5%;
 }
-#brand a {
+.brand a {
   letter-spacing: 5px;
   vertical-align: middle;
   color: white;
   font-size: 1.5em;
 }
 
-#starsbackground ul {
+.starsbackground ul {
   list-style: none;
   display: inline;
 }
 
-#starsbackground li {
+.starsbackground li {
   display: inline;
   font-weight: bold;
 }
-#topmiddle, #right-side {
+.top-middle, .right-side {
   margin-top: .5%
 }
-#topmiddle a {
+.top-middle a {
   font-size: 1em;
 }
 ul a {
@@ -69,15 +65,6 @@ li a:hover, a:visited, a:active {
   text-decoration: none;
 }
 
-.greenbutton {
-  border-style: solid;
-  border-color: #46b65d;
-  border-width: 2px;
-  border-radius: 5px;
-  padding: 8px 16px 8px 16px;
-  font-size: 1em;
-}
-
 .greenbutton > a {
   color: #46b65d;
   letter-spacing: 1px;
@@ -87,9 +74,13 @@ li a:hover, a:visited, a:active {
  -ms-transition: color 0s ease-out;
  transition: color 0s ease-out;
  font-weight: normal;
+ padding: 8px 16px 8px 16px;
+ border: 2px solid #45b65d;
+ border-radius: 5px;
+ font-size: 1em;
 }
 
-.greenbutton:hover {
+.greenbutton a:hover {
   color: white;
   background-color: #46b65d;
 }
@@ -102,7 +93,7 @@ li a:hover, a:visited, a:active {
   color: #46b65d;
 }
 
-.slackbutton {
+.slackbutton a {
   letter-spacing: 0px;
   border-style: solid;
   border-width: 1px;
@@ -125,23 +116,23 @@ li a:hover, a:visited, a:active {
 }
 
 
-#right-side a {
+.right-side a {
   font-size: 1em;
 }
 
 /* Header and logos */
 
-.header {
+header {
   text-align: center;
   padding-top: 5%;
 }
 
-.header h1 {
+header h1 {
   letter-spacing: 3px;
   font-size: 60px;
 }
 
-.header a {
+header a {
   text-decoration: none;
   border-style: solid;
   border-width: 1px;
@@ -153,10 +144,13 @@ li a:hover, a:visited, a:active {
   font-size: 16px;
   letter-spacing: 1px;
 }
+header a:hover {
+  text-decoration: none;
+}
 .toppad {
   padding-top: 5%;
 }
-#logos {
+.logos {
   padding-top: 10%;
   padding-bottom: 1%;
 
@@ -170,54 +164,54 @@ li a:hover, a:visited, a:active {
 .floatleft {
   float: left;
 }
-#logos img {
+.logos img {
   height: 100px;
   width: 100px;
   display: block;
   margin: 0 auto;
 }
 
-#logos h2 {
+.logos h2 {
   text-align: center;
   letter-spacing: 1px;
 }
 
 /* Bulleted List Area */
 
-#bulletlists {
+.bulletlists {
 display: block;
 background-color: #0a1028;
 }
-#bulletlists #bulletrow, #bulletlists #bulletrow2 {
+.bulletrow, .bulletrow2 {
   margin: 0% 20% 0% 20%;
 }
-#bulletlists p {
+.bulletlists p {
   font-size: 20px;
   text-align: center;
   padding: 5% 2% 2% 2%;
   color: white;
 }
-#bulletlists ul {
+.bulletlists ul {
   font-size: 16px;
 }
-#bulletlists ul li {
+.bulletlists ul li {
   padding: 2% 1% 2% 1%;
   color: #46b65d;
 }
-#bulletlists ul li span {
+.bulletlists ul li span {
   color: white;
   opacity: .7;
 }
 .bulletlists2 {
   display: none;
 }
-#getstartedbutton {
+.getstartedbutton {
   text-align: center;
   margin-top: 2%;
   margin-bottom: 5%;
   margin-left: 1%;
 }
-#getstartedbutton a {
+.getstartedbutton a {
   text-decoration: none;
   border-style: solid;
   border-width: 1px;
@@ -231,11 +225,11 @@ background-color: #0a1028;
 }
 
 /* Computer Area */
-#computer {
+.computer {
   background: #0a1028;
   height: 150px;
 }
-#computerbackground img {
+.computerbackground img {
 margin: 0 auto;
 border: 1px solid silver;
 border-radius: 15px;
@@ -243,28 +237,26 @@ position: relative;
 top: -100px;
 }
 
-#computerbackground {
+.computerbackground {
   background: #181c40;
 }
 
-/* Scrolling Area Erika's Code */
+/* Scrolling Area */
 
-#scrollingarea {
+.scrollingarea {
   background-color: #0a1028;
 }
-#scrollingarea h3 {
+.scrollingarea h3 {
   color: white;
   padding-top: 3%;
   padding-bottom: 3%;
   
 }
-#scrollingarea h4 {
+.scrollingarea h4 {
   color: silver;
   letter-spacing: 1px;
 }
-#topflow {
-  display: inline
-}
+
 .arrows {
   margin-top: 65%;
   background: white;
@@ -340,19 +332,19 @@ top: -100px;
   display: none;
 }
 /* Tabbed Area */
-#tabbedarea {
+.tabbedarea {
   background: #181c40;
   padding-top: 2%;
   padding-bottom: 4%;
 }
 
-#tabbedarea h2 {
+.tabbedarea h2 {
   color: white;
   letter-spacing: 1px;
   text-align: center;
 }
 
-#tabbedarea p {
+.tabbedarea p {
   color: white;
   opacity: .7;
   text-align: center;
@@ -394,7 +386,7 @@ top: -100px;
 }
 
 /* Bottom Navbar */
-#botnav {
+.botnav {
   background: #227870;
   color: white;
   letter-spacing: 1px;
@@ -403,28 +395,28 @@ top: -100px;
   font-weight: 400;
 }
 
-#botnav li {
+.botnav li {
   list-style: none;
   display: inline-block;
   padding: 28px 24px 24px 24px;
 
 }
-#botnav a {
+.botnav a {
   color: white;
 }
 
 /* Subscribe Area */
-#subscribearea {
+.subscribearea {
   background: #181c40;
   padding-bottom: 5%;
 }
-#subscribearea p {
+.subscribearea p {
   color: white;
   font-size: 28px;
   padding: 6% 0% 2% 0%;
 }
 
-#subscribearea input {
+.subscribearea input {
   width: 300px;
   height: 60px;
   background: #181c40;
@@ -435,11 +427,11 @@ top: -100px;
   padding-right: 1%;
 }
 
-#subscribearea input:active {
+.subscribearea input:active {
   border: 1px solid #186194;
 }
 
-#subscribearea button {
+.subscribearea button {
   border: none;
   outline: none;
   cursor: pointer;
@@ -453,7 +445,7 @@ top: -100px;
   transition-duration: .5s;
 }
 
-#subscribearea button:hover {
+.subscribearea button:hover {
   background: rgba(34, 120, 112, .7);
   -webkit-transition-duration: .5s;
   transition-duration: .5s;
@@ -474,7 +466,7 @@ footer h2 {
 .opacity6 {
   opacity: .6;
 }
-#heart {
+.heart {
   color: red;
 }
 
@@ -483,7 +475,7 @@ text-decoration: none;
 color: white;
 }
 
-#twitter {
+.twitter {
   color: #00aced;
   font-size: 26px;
   padding-top: 5%;
@@ -492,51 +484,55 @@ color: white;
 
 /*responsive settings*/
 @media screen and (max-width: 1500px) and (min-width: 901px) {
-#starsbackground ul {
+.starsbackground ul {
   display: block;
   padding: 0;
 }
-  #starsbackground ul li {
+  .starsbackground li {
   display: block;
   width: 100%;
   text-align: center;
   margin-top: 3%;
 } 
-#right-side {
+.right-side {
   margin-left: 0%;
 }
-#right-side ul {
+.right-side ul {
   float: right;
 }
-#brand ul {
+.right-side li {
+  margin-top: 20%;
+}
+.brand ul {
   float: left;
 }
-#botnav ul {
-  
+.subscribearea button {
+  margin-top: 5%;
 }
+
 }
 @media screen and (max-width: 900px) {
-#starsbackground ul {
+.starsbackground ul {
   display: block;
   padding: 0;
 }
-#starsbackground ul li {
+.starsbackground ul li {
   display: block;
   width: 100%;
   margin-top: 5%;
   text-align: center;
 }
-#right-side {
+.right-side {
   margin-left: 0%;
 }
-.header h1 {
+header h1 {
   letter-spacing: 3px;
   font-size: 3em;
 }
-.header h2 {
+header h2 {
   font-size: 1.5em;
 }
-.header a {
+header a {
   
   padding: 5%;
   font-size: 16px;
@@ -546,7 +542,7 @@ color: white;
   padding-top: 10%;
   padding-bottom: 50%;
 }
-#logos {
+.logos {
   display: none;
 }
 .logos2 {
@@ -559,18 +555,18 @@ color: white;
 .logos2 img {
   padding: 0% 30% 0% 30%;
 }
-#bulletlists #bulletrow, #bulletlists #bulletrow2 {
+.bulletrow, .bulletrow2 {
   margin: 0% 0% 0% 0%;
 }
-#bulletrow p {
+.bulletrow p {
   padding-top: 0%;
   padding-bottom: 10%;
 }
-#getstartedbutton {
+.getstartedbutton {
   padding-top: 5%;
   padding-bottom: 10%;
 }
-#getstartedbutton a {
+.getstartedbutton a {
   padding: 3%;
   font-size: 16px;
 }
@@ -581,56 +577,56 @@ color: white;
 }
 
 @media screen and (max-width: 400px) {
-  #starsbackground {
+  .starsbackground {
     color: white;
     background-image: url("stars.jpg");
     background-repeat: no-repeat;
     background-position: top;
   }
   
-  #starsbackground ul {
+  .starsbackground ul {
     display: block;
     padding: 0;
   }
-  #starsbackground li {
+  .starsbackground li {
     display: block;
     padding: 3%;
   }
-  #brand {
+  .brand {
     margin-top: 5%;
     text-align: center;
   }
-  #brand a {
+  .brand a {
     letter-spacing: 5px;
     vertical-align: middle;
     color: white;
     font-size: 2em;
   }
   
-  #topmiddle {
+  .top-middle {
     padding: 5%;
     font-size: 1em;
   }
-  #right-side {
+  .right-side {
     margin-left: 0%;
     text-align: center;
     font-size: 1em;
   }
-  #right-side li {
+  .right-side li {
     display: block;
     margin-top: 5%;
   }
   .slackbutton {
     margin-left: 0%;
   }
-  .header h1 {
+  header h1 {
     letter-spacing: 3px;
     font-size: 2em;
   }
-  .header h3 {
+  header h3 {
     font-size: 1.5em;
   }
-  .header a {
+  header a {
     
     padding: 5%;
     font-size: 16px;
@@ -641,7 +637,7 @@ color: white;
     padding-top: 20%;
     padding-bottom: 40%;
   }
-  #logos {
+  .logos {
     display: none;
   }
   .logos2 {
@@ -651,11 +647,11 @@ color: white;
     color: white;
     text-align: center;
   }
-  #bulletrow {
+  .bulletrow {
     display: none;
   }
   
-  #bulletlists #bulletrow, #bulletlists #bulletrow2 {
+  .bulletrow, .bulletrow2 {
     margin: 0% 0% 0% 0%;
   }
   .bulletlists2 {
@@ -664,30 +660,30 @@ color: white;
   .logos2 img {
     padding: 0% 30% 0% 30%;
   }
-  #bulletlists #bulletrow {
+  .bulletrow {
     margin: 0%;
   }
   
-  #bulletlists p {
+  .bulletlists p {
     padding: 2% 0% 10% 0%;
   }
-  #bulletlists ul li {
+  .bulletlists ul li {
     padding: 5% 0% 5% 0%;
     letter-spacing: 0.5px;
   }
-  #getstartedbutton {
+  .getstartedbutton {
     padding-top: 15%;
     padding-bottom: 35%;
   }
-  #getstartedbutton a {
+  .getstartedbutton a {
     padding: 8%;
     font-size: 16px;
   }
-  #computer {
+  .computer {
     background: #0a1028;
     height: 0px;
   }
-  #computerbackground img {
+  .computerbackground img {
   margin: 0 auto;
   position: relative;
   top: 0;
@@ -702,7 +698,7 @@ color: white;
     font-size: 1em !important;
     padding-top: 5%;
   }
-  #tabbedarea {
+  .tabbedarea {
     padding-top: 10%;
     padding-bottom: 10%;
   }
@@ -713,19 +709,19 @@ color: white;
     padding: 10px 16px;
     font-size: 1em;
   }
-  #botnav ul {
+  .botnav ul {
     padding: 0;
   }
-  #botnav li {
+  .botnav li {
     display: block;
   }
-  #subscribearea input {
+  .subscribearea input {
     width: 80%;
   }
-  #subscribearea button {
+  .subscribearea button {
     margin-top: 10%;
   }
-  #subscribearea p {
+  .subscribearea p {
     letter-spacing: 1px;
   }
 }
