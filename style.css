@@ -124,26 +124,24 @@ li a:hover, a:visited, a:active {
   width: 20px;
 }
 
-#right-side  {
-  
-}
+
 #right-side a {
   font-size: 1em;
 }
 
 /* Header and logos */
 
-#header {
+.header {
   text-align: center;
   padding-top: 5%;
 }
 
-#header h1 {
+.header h1 {
   letter-spacing: 3px;
   font-size: 60px;
 }
 
-#header a {
+.header a {
   text-decoration: none;
   border-style: solid;
   border-width: 1px;
@@ -461,7 +459,7 @@ top: -100px;
   transition-duration: .5s;
 }
 /* Footer Area */
-#footer {
+footer {
   background: #0a1028;
   color: white;
   letter-spacing: 2px;
@@ -469,8 +467,9 @@ top: -100px;
   padding-bottom: 5%;
 }
 
-#footer h5 {
+footer h2 {
   padding: 2%;
+  font-size: 1.5em;
 }
 .opacity6 {
   opacity: .6;
@@ -479,7 +478,7 @@ top: -100px;
   color: red;
 }
 
-#footer a {
+footer a {
 text-decoration: none;
 color: white;
 }
@@ -492,7 +491,30 @@ color: white;
 }
 
 /*responsive settings*/
-
+@media screen and (max-width: 1500px) and (min-width: 901px) {
+#starsbackground ul {
+  display: block;
+  padding: 0;
+}
+  #starsbackground ul li {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 3%;
+} 
+#right-side {
+  margin-left: 0%;
+}
+#right-side ul {
+  float: right;
+}
+#brand ul {
+  float: left;
+}
+#botnav ul {
+  
+}
+}
 @media screen and (max-width: 900px) {
 #starsbackground ul {
   display: block;
@@ -507,14 +529,14 @@ color: white;
 #right-side {
   margin-left: 0%;
 }
-#header h1 {
+.header h1 {
   letter-spacing: 3px;
   font-size: 3em;
 }
-#header h3 {
+.header h2 {
   font-size: 1.5em;
 }
-#header a {
+.header a {
   
   padding: 5%;
   font-size: 16px;
@@ -601,14 +623,14 @@ color: white;
   .slackbutton {
     margin-left: 0%;
   }
-  #header h1 {
+  .header h1 {
     letter-spacing: 3px;
     font-size: 2em;
   }
-  #header h3 {
+  .header h3 {
     font-size: 1.5em;
   }
-  #header a {
+  .header a {
     
     padding: 5%;
     font-size: 16px;
